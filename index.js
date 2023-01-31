@@ -15,7 +15,7 @@ const productoModel = mongoose.model('productos', productoSchema)
 
 // conectar a la base de datos Mongo DB Atlas
 try {
-    await mongoose.connect('mongodb+srv://williamcruzacero:ingridyw86@ecommerce.cgmpmwp.mongodb.net/?retryWrites=true&w=majority', {
+    await mongoose.connect('mongodb+srv://williamcruzacero:ingridyw86@ecommerce.cgmpmwp.mongodb.net/ecommerce?retryWrites=true&w=majority', {
         serverSelectionTimeoutMS: 5000,
     })
     console.log('Base de datos conectada')
